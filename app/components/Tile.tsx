@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import type { Place } from "../data/places";
+import { PLACE_IMAGES } from "../data/images";
 
 const THEMES = [
   "linear-gradient(165deg,#5FC9D6,#2A8FA8 52%,#14627E)",
@@ -17,8 +18,6 @@ const RATIOS = ["r34", "r45", "r11", "r43", "r45", "r34"];
 const initial = (n: string) => n.replace(/^(L'|Le |La |Les )/i, "").charAt(0);
 const mapsLink = ([lat, lng]: [number, number]) =>
   `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-const unsplash = (q: string) =>
-  `https://source.unsplash.com/800x1000/?${encodeURIComponent(q)}`;
 
 function Stars({ n }: { n: number }) {
   return (
@@ -87,7 +86,7 @@ export default function Tile({ place: d, index }: Props) {
           className={`tile__img${imgLoaded ? " loaded" : ""}`}
           alt={`${d.name}, Zakynthos`}
           loading="lazy"
-          src={unsplash(d.q)}
+          src={PLACE_IMAGES[d.id] ?? `https://source.unsplash.com/800x1000/?${encodeURIComponent(d.q)}`}
           onLoad={() => setImgLoaded(true)}
           onError={(e) => (e.currentTarget.style.display = "none")}
         />

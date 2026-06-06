@@ -587,6 +587,143 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 300; color: var(--ink); mar
 }
 
 /* =====================================================
+   TRAVEL — boarding passes
+   ===================================================== */
+.travel { padding: 80px 0 20px; }
+.travel__head { text-align: center; margin-bottom: 52px; }
+.travel__title {
+  font-size: clamp(34px, 4vw, 52px); margin: 10px 0 6px;
+  letter-spacing: .02em;
+}
+.travel__date {
+  font-family: var(--script); font-weight: 600; font-size: 22px;
+  color: var(--terra);
+}
+
+.travel__timeline {
+  max-width: 780px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 0;
+}
+
+/* boarding pass card */
+.bpass {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px 32px 22px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.bpass::before {
+  content: "";
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--sea), var(--aqua), var(--gold));
+}
+.bpass__airline {
+  font-family: var(--sans); font-size: 10px; font-weight: 600;
+  letter-spacing: .28em; text-transform: uppercase; color: var(--faint);
+  margin-bottom: 4px;
+}
+.bpass__number {
+  font-family: var(--serif); font-size: 28px; font-weight: 500;
+  color: var(--ink); letter-spacing: .08em; margin-bottom: 22px;
+}
+.bpass__route {
+  display: grid; grid-template-columns: auto 1fr auto;
+  align-items: center; gap: 16px; margin-bottom: 20px;
+}
+.bpass__stop { display: flex; flex-direction: column; }
+.bpass__stop--right { text-align: right; }
+.bpass__code {
+  font-family: var(--serif); font-size: 40px; font-weight: 300;
+  color: var(--ink); line-height: 1; letter-spacing: .04em;
+}
+.bpass__city {
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--faint); margin-top: 3px;
+}
+.bpass__time {
+  font-family: var(--serif); font-size: 22px; font-weight: 400;
+  color: var(--sea); margin-top: 6px; letter-spacing: .04em;
+}
+.bpass__arrow {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--sand); min-width: 0;
+}
+.bpass__arrow svg { width: 100%; max-width: 80px; }
+.bpass__op {
+  font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--faint); white-space: nowrap;
+}
+.bpass__meta {
+  display: flex; gap: 8px; flex-wrap: wrap; padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+.bpass__tag {
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 500; color: var(--ink-soft);
+  background: rgba(22,58,78,.06); border-radius: 4px; padding: 4px 10px;
+}
+
+/* tear perforation */
+.bpass__tear {
+  position: absolute; bottom: 52px; left: -8px; right: -8px; height: 0;
+  border-bottom: 1.5px dashed var(--line);
+  pointer-events: none;
+}
+
+/* layover connector */
+.travel__layover {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 32px;
+}
+.travel__layover-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--gold); flex: none;
+}
+.travel__layover-line {
+  flex: 1; height: 1px; background: var(--line);
+}
+.travel__layover-info {
+  display: flex; flex-direction: column; align-items: center;
+  white-space: nowrap;
+}
+.travel__layover-dur {
+  font-family: var(--serif); font-size: 17px; color: var(--ink);
+}
+.travel__layover-city {
+  font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--faint); margin-top: 1px;
+}
+
+/* arrival badge */
+.travel__arrival {
+  display: flex; align-items: center; gap: 16px;
+  margin-top: 18px; padding: 20px 28px;
+  background: linear-gradient(135deg, var(--sea-deep), var(--sea));
+  border-radius: 12px; color: #fff;
+}
+.travel__arrival-icon { width: 28px; height: 28px; opacity: .8; flex: none; }
+.travel__arrival-label {
+  font-family: var(--sans); font-size: 10px; font-weight: 600;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: rgba(255,255,255,.7);
+}
+.travel__arrival-time {
+  font-family: var(--serif); font-size: 20px; font-weight: 300;
+  letter-spacing: .03em; margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .bpass { padding: 22px 20px 18px; }
+  .bpass__code { font-size: 30px; }
+  .bpass__time { font-size: 18px; }
+  .travel__layover { padding: 12px 20px; }
+  .travel__arrival { padding: 16px 20px; }
+}
+
+/* =====================================================
    FAILSAFE
    ===================================================== */
 .no-anim *, .no-anim *::before, .no-anim *::after {
