@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   title: "Zakynthos · Carnet ionien",
   description:
     "Carnet de voyage — Zakynthos, été 2026. Plages turquoise, tavernes, couchers de soleil et trésors cachés de l'île ionienne.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
