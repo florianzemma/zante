@@ -39,6 +39,19 @@ export const PLACE_IMAGES: Record<string, string> = {
   "olive-tree":
     "https://images.unsplash.com/photo-1602584386319-fa8eb4361c2c?w=800&auto=format&fit=crop&q=80",
 
+  "nobelos":
+    "https://nobelos.gr/wp-content/uploads/2019/03/nobelos-sea-side-lodge2003-1.jpg",
+  "porta-del-mar":
+    "https://www.portadelmar.com/sites/portadelmar/files/photos/162.jpg",
+  "balcony":
+    "https://balconyhotel.gr/wp-content/uploads/2023/12/Balcony-2021-3-1024x683.jpg",
+  "makai":
+    "https://alexandrabeachresort.com/wp-content/uploads/2025/06/DSC_6332-Medium.jpg",
+  "prosilio":
+    "https://www.virtualzakynthos.gr/wp-content/uploads/DSC_0035-copy-910x667.jpg",
+  "porto-schiza":
+    "https://img02.restaurantguru.com/c890-Cafe-Porto-Schiza-Attraction-meals.jpg",
+
   // BARS & COUCHER DE SOLEIL
   "lete":
     "https://images.unsplash.com/photo-1755681705583-38a2ee934114?w=800&auto=format&fit=crop&q=80",
@@ -48,6 +61,13 @@ export const PLACE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1629286521433-dfa4637fbe9a?w=800&auto=format&fit=crop&q=80",
   "michalis":
     "https://images.unsplash.com/photo-1693775253225-cbad4016454c?w=800&auto=format&fit=crop&q=80",
+
+  "la-luna":
+    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/7b/50/9c/caption.jpg",
+  "noe":
+    "https://www.noebeachclub.com/wp-content/uploads/2025/05/16-1024x768.jpg",
+  "isabels":
+    "https://media-cdn.tripadvisor.com/media/photo-s/2f/f4/6f/3c/isabel-s-beach-club-restaurant.jpg",
 
   // SITES & NATURE
   "navagio-view":

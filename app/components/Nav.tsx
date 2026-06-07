@@ -34,6 +34,7 @@ export default function Nav() {
 
       <div className={`nav__links${open ? " open" : ""}`} id="navlinks">
         {[
+          { href: "#vols", label: "Vols" },
           { href: "#plages", label: "Plages" },
           { href: "#restaurants", label: "Restaurants" },
           { href: "#bars", label: "Bars & Coucher de soleil" },

@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
+import FlightsSection from "./components/FlightsSection";
 import FilterBar from "./components/FilterBar";
 import Section from "./components/Section";
 import MapSection from "./components/MapSection";
@@ -28,6 +29,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Intro />
+      <FlightsSection />
       <FilterBar
         filterCat={filterCat}
         filterTier={filterTier}
