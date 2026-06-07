@@ -29,7 +29,7 @@ export default function Hero() {
         <h1>Zakynthos</h1>
         <div className="hero__sub">
           <span className="ln" />
-          <span>été grec, 2025</span>
+          <span>été grec, 2026</span>
           <span className="ln" />
         </div>
       </div>

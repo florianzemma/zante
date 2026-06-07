@@ -27,7 +27,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Zakynthos · Carnet ionien",
   description:
-    "Carnet de voyage — Zakynthos, été 2025. Plages turquoise, tavernes, couchers de soleil et trésors cachés de l'île ionienne.",
+    "Carnet de voyage — Zakynthos, été 2026. Plages turquoise, tavernes, couchers de soleil et trésors cachés de l'île ionienne.",
 };
 
 export default function RootLayout({

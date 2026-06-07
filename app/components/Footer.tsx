@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
             <div className="postcard__by">
               Florian &amp; Alexandra
-              <small>Zakynthos · Été 2025</small>
+              <small>Zakynthos · Été 2026</small>
             </div>
           </div>
           <div className="postcard__divider" />
